@@ -1,0 +1,29 @@
+header {
+  #navLogo {
+    height: 100px;
+  }
+
+  a.nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding-left: 10px;
+
+    &:hover {
+      color: #ff9800;
+    }
+
+    &.active {
+      color: white;
+      background-color: #ff9800;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    #navLogo {
+      height: 50px;
+    }
+  }
+}
