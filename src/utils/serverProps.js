@@ -1,10 +1,11 @@
 import tabs from './tabs';
 import events from './calendarEvents';
 import contentEn from './content-en';
+import carouselImages from './carouselImages';
 
 const getSelectedTab = function () {
 	const selectedTab = tabs.find((item) =>
-		item.href === window.location.pathname);
+		item && item.href === window.location.pathname);
 	selectedTab.active = true;
 	return selectedTab;
 }
@@ -19,7 +20,10 @@ let initialData = {
 	calendar: {
 		events: events
 	},
-	content: contentEn
+	content: contentEn,
+	carousel: {
+		images: carouselImages
+	}
 };
 
 const serverProps = {

@@ -5,3 +5,5 @@ export const SELECTED_TAB = 'SELECTED_TAB';
 
 export const CONTENT = 'CONTENT';
 export const LANGUAGE = 'LANGUAGE';
+
+export const IMAGES = 'IMAGES';

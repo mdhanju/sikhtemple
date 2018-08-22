@@ -5,7 +5,10 @@ class ContactUsContainer extends React.Component {
     render() {
       return (
         <Container>
-          Contact us container
+        <h3 className="text-center" style={{ margin: 50 }}>Please get in touch</h3>
+        <div className="text-center" style={{ margin: 50 }}>
+          Comming soon...
+        </div>
         </Container>
       )
     }

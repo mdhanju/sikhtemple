@@ -12,11 +12,13 @@ header {
 
     &:hover {
       color: #ff9800;
+      padding-left: 10px;
     }
 
     &.active {
       color: white;
       background-color: #ff9800;
+      padding-left: 10px;
     }
   }
 }

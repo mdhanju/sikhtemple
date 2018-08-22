@@ -1,29 +1,52 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import _get from 'lodash/get';
 
 class InfoRow extends React.Component {
     render() {
-      console.log(this.props.content.one);
-      const historyLabel = _get(this, 'props.content.history', '');
       const oneContent = _get(this, 'props.content.one', '');
-      const heroContent = _get(this, 'props.content.hero', '');
-      const heroAuthor = _get(this, 'props.content.heroAuthor', '');
+      const twoContent = _get(this, 'props.content.two', '');
+
       return (
         <div style={{
           padding: 20,
           margin: 20
         }}>
-          <h3 className="text-center"
-              style={{ margin: '20px auto 0px', color: '#ff9800' }}>
+          {/*<h4 className="text-center"
+              style={{
+                margin: '20px auto 0px',
+                color: 'grey',
+                fontWeight: 400,
+              }}>
               {heroContent}
-          </h3>
+          </h4>
           <div className="text-right"
-                style={{ color: '#ff9800', marginBottom: 10 }}>
+                style={{
+                  color: '#ff9800',
+                  marginBottom: 10,
+                  fontWeight: 300,
+                }}>
                 {`-`}{heroAuthor}
           </div>
-          <h4>{historyLabel}</h4>
-          {oneContent}
+          <h4 style={{
+            color: 'grey',
+            }}>
+            {historyLabel}
+          </h4>*/}
+
+          <div style={{
+            color: 'grey',
+            margin: '20px auto',
+            fontWeight: 300,
+            }}>
+            {oneContent}
+          </div>
+          <div style={{
+            color: 'grey',
+            marginBottom: 10,
+            fontWeight: 300,
+            }}>
+            {twoContent}
+          </div>
         </div>
       )
     }

@@ -27,11 +27,13 @@ class HeaderTabs extends React.Component {
 		}
 
     render(){
-      const { item, index } = this.props;
+      const { item, index, showBorder } = this.props;
       const tabClasses = item.active ? ' active' : '';
+      const liStyles = showBorder ? { borderRight: '1px solid white'} : {};
 
       return (<li
                 className="nav-item"
+                style={liStyles}
                 key={`${item.label}_${index}`}
                 >
                   <Link
@@ -60,11 +62,13 @@ class Header extends React.Component {
     }
 
     render() {
-      const { tabs, imageGallery } = this.props;
+      const { tabs, imageGallery, background } = this.props;
       const headerStyles = {
         borderBottom: '1px solid #ff9800',
         backgroundColor: '#2196f36b',
       }
+
+      const ulStyles = background ? { backgroundColor: '#ff9701' }: {}
 
       if (imageGallery) {
         headerStyles.position = 'absolute';
@@ -93,11 +97,13 @@ class Header extends React.Component {
                 </button>
               <div className="collapse navbar-collapse"
                     id="navbarSupportedContent">
-                  <ul className="navbar-nav ml-auto nav-flex-icons">
+                  <ul className="navbar-nav ml-auto nav-flex-icons"
+                      style={ulStyles}>
                       {tabs.map((item, i) => <HeaderTabs
                                                 item={item}
                                                 index={i}
                                                 key={i}
+                                                showBorder={background}
                                                 handleToggle={this.handleToggle}
                                                 tabs={this.props.tabs}
                                                 imageGallery={this.props.imageGallery}

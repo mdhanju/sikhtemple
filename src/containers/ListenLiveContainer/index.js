@@ -5,7 +5,9 @@ class ListenLiveContainer extends React.Component {
     render() {
       return (
         <Container>
-          ListenLiveContainer Container
+          <div className="text-center" style={{ margin: 50, minHeight: 600  }}>
+            Comming soon...
+          </div>
         </Container>
       )
     }

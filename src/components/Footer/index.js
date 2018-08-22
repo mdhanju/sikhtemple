@@ -12,7 +12,7 @@ class Footer extends React.Component {
     render() {
       const { imageGallery } = this.props;
       const footerStyles = {
-        height: 60,
+        minHeight: 60,
         backgroundColor: '#2196f36b',
         width: '100%',
         padding: 20,
@@ -28,8 +28,8 @@ class Footer extends React.Component {
               <div style={{ color: 'white' }}>© 2018, <a href="http://www.asritsolutions.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'underline' }}>Asritsolutions.</a> All Rights Reserved.</div>
             </Col>
             <Col className="text-right">
-              <a href="https://osrit.com/policy" rel="noopener noreferrer" target="_blank" style={{ color: 'white', textDecoration: 'underline' }}>Privacy Policy</a>
-              <a href="https://osrit.com/terms" rel="noopener noreferrer" target="_blank" style={{ color: 'white', marginLeft: 10, textDecoration: 'underline' }}>Terms of Service</a>
+              <a href="https://osrit.com/policy" rel="noopener noreferrer" target="_blank" style={{ color: 'white', textDecoration: 'underline' }}>Privacy&nbsp;Policy</a>
+              <a href="https://osrit.com/terms" rel="noopener noreferrer" target="_blank" style={{ color: 'white', marginLeft: 10, textDecoration: 'underline' }}>Terms&nbsp;of&nbsp;Service</a>
             </Col>
           </Row>
         </footer>

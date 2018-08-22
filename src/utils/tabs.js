@@ -13,12 +13,6 @@ export const tabs = [
 		href: '/nagarKirtan'
   },
 	{
-		label: 'Calendar',
-		public: false,
-		showImageGallery: false,
-		href: '/calendar'
-  },
-	{
 		label: 'Events',
 		public: false,
 		showImageGallery: false,
@@ -37,10 +31,16 @@ export const tabs = [
 		href: '/listenLive'
   },
 	{
-		label: 'Contact Us',
+		label: 'Contact',
 		public: false,
 		showImageGallery: false,
 		href: '/contactUs'
+  },
+	{
+		label: 'LogIn',
+		public: false,
+		showImageGallery: false,
+		href: '/login'
   }
 ]
 export default tabs;

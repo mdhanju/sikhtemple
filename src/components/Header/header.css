@@ -8,10 +8,12 @@ header a.nav-link {
   border-radius: 25px;
   padding-left: 10px; }
   header a.nav-link:hover {
-    color: #ff9800; }
+    color: #ff9800;
+    padding-left: 10px; }
   header a.nav-link.active {
     color: white;
-    background-color: #ff9800; }
+    background-color: #ff9800;
+    padding-left: 10px; }
 
 @media screen and (max-width: 480px) {
   header #navLogo {
