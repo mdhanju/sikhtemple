@@ -13,7 +13,7 @@ export const tabs = [
 		href: '/nagarKirtan'
   },
 	{
-		label: 'Events',
+		label: 'Calendar',
 		public: false,
 		showImageGallery: false,
 		href: '/events'
@@ -25,7 +25,7 @@ export const tabs = [
 		href: '/sikhism'
   },
 	{
-		label: 'Live',
+		label: 'Events',
 		public: false,
 		showImageGallery: false,
 		href: '/listenLive'

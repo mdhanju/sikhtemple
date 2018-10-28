@@ -23,6 +23,7 @@ $ npm install
 $ npm run build
 ```
 
+
 The project will be built assuming it is hosted at the server root.
 You can control this with the homepage field in your package.json.
 For example, add this to build it for GitHub Pages:

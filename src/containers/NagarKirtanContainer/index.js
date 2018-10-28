@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Container } from 'reactstrap';
+import { Container, Alert } from 'reactstrap';
 import _get from 'lodash/get';
 import nagarKirtanImg from '../../images/nagarKirtan.jpg';
 
@@ -23,12 +23,11 @@ class NagarKirtanContainer extends React.Component {
           <div className="text-center">
             <img style={{ maxWidth: '100%' }} src={nagarKirtanImg} alt={'Nagar Kirtan'} />
           </div>
-          <h3 className="text-center" style={{
+          <Alert color= "primary" className="text-center" style={{
             margin: '20px auto 20px',
-            color: 'grey',
             fontWeight: 400,
             fontSize: 34
-          }}>{header}</h3>
+          }}>{header}</Alert>
           <div style={{
             color: 'grey',
             margin: '50px auto 25px',
@@ -43,12 +42,11 @@ class NagarKirtanContainer extends React.Component {
             }}>
             {twoContent}
           </div>
-          <h3 className="text-center" style={{
+          <Alert color= "primary" className="text-center" style={{
             margin: '20px auto 20px',
-            color: 'grey',
             fontWeight: 400,
             fontSize: 34
-          }}>{tipsHeader}</h3>
+          }}>{tipsHeader}</Alert>
           <div style={{
             color: 'grey',
             margin: '25px auto',
@@ -70,12 +68,11 @@ class NagarKirtanContainer extends React.Component {
             }}>
             {tipTwo}
           </div>
-          <h3 className="text-center" style={{
+          <Alert color= "primary" className="text-center" style={{
             margin: '20px auto 20px',
-            color: 'grey',
             fontWeight: 400,
             fontSize: 34
-          }}>{tipsHeaderTwo}</h3>
+          }}>{tipsHeaderTwo}</Alert>
           <div style={{
             color: 'grey',
             margin: '25px auto',
