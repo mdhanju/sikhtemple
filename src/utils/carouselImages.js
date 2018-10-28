@@ -23,8 +23,8 @@ export default [
 		original: 'https://s3.amazonaws.com/sikhtempleyubacity/6.jpg',
 		thumbnail: 'https://s3.amazonaws.com/sikhtempleyubacity/6.jpg'
   },
-	{
-		original: 'https://s3.amazonaws.com/sikhtempleyubacity/7.jpg',
-		thumbnail: 'https://s3.amazonaws.com/sikhtempleyubacity/7.jpg'
-  }
+	// {
+	// 	original: 'https://s3.amazonaws.com/sikhtempleyubacity/7.jpg',
+	// 	thumbnail: 'https://s3.amazonaws.com/sikhtempleyubacity/7.jpg'
+  // }
 ];
