@@ -24,19 +24,39 @@ class LogInContainer extends React.Component {
     constructor(props){
       super(props);
       this.state = {
-        isError: false
+        isError: false,
+        UserNameError: '',
+        PasswordError: ''
       }
     }
 
     onSignInClick = () => {
-      let isFormValid = false;
-      if(!isFormValid){
-        this.setState({ isError: true })
+      let isFormValid = true;
+      if(!this.state.UserName){
+        isFormValid = false;
+        this.setState({ UserNameError: 'Username is required' });
+      } else{
+        this.setState({ UserNameError: '' });
       }
+      if(!this.state.Password){
+        isFormValid = false;
+        this.setState({ PasswordError: 'Password is required' });
+      } else{
+        this.setState({ PasswordError: '' });
+      }
+
+      if(isFormValid){
+        setTimeout(()=> this.setState({ isError: true }), 500);
+      }
+
    }
 
     handleChange = (name, value) => {
       this.setState({ [name]: value });
+    }
+
+    onFocus = (name) => {
+      this.setState({ [name]: '' });
     }
 
     render() {
@@ -48,6 +68,8 @@ class LogInContainer extends React.Component {
               <CustomInput
                 name={'UserName'}
                 label={'UserName'}
+                errorMessage={this.state.UserNameError}
+                onFocus={() => this.onFocus('UserNameError')}
                 icon= {'user'}
                 sm={12}
                 type="email"
@@ -56,6 +78,8 @@ class LogInContainer extends React.Component {
               <CustomInput
                 name={'Password'}
                 label={'Password'}
+                errorMessage={this.state.PasswordError}
+                onFocus={() => this.onFocus('PasswordError')}
                 icon= {'lock'}
                 sm={12}
                 type="email"
