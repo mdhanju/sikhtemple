@@ -12,12 +12,12 @@ export const tabs = [
 		showImageGallery: false,
 		href: '/nagarKirtan'
   },
-	{
-		label: 'Calendar',
-		public: false,
-		showImageGallery: false,
-		href: '/events'
-  },
+	// {
+	// 	label: 'Calendar',
+	// 	public: false,
+	// 	showImageGallery: false,
+	// 	href: '/events'
+  // },
 	{
 		label: 'Sikhism',
 		public: false,
